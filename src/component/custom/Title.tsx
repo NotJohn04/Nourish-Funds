@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { SparklesCore } from "@/src/component/ui/Spartkles";
+import { SparklesCore } from "@/component/ui/Spartkles";
 
 export function Title() {
   return (
