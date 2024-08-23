@@ -5,7 +5,7 @@ import "./globals.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ThirdwebProvider } from "../component/custom/ThirdwebProvider";
 import Header2 from "../component/custom/Header2";
-import { Sepolia } from "@thirdweb-dev/chains"; // Import the correct chain type
+import { ScrollSepoliaTestnet } from "@thirdweb-dev/chains"; // Import the correct chain type
 
 const activeChain = "binance-testnet";
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +23,7 @@ export default function RootLayout({
         <html lang="en">
           <body className={inter.className}>
             {/* <Header2></Header2> */}
-            <ThirdwebProvider activeChain={Sepolia}>
+            <ThirdwebProvider activeChain={ScrollSepoliaTestnet}>
             <QueryClientProvider 
             client={queryClient}
             contextSharing={true}

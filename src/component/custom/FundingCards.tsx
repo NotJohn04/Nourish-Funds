@@ -8,6 +8,8 @@ import {
   IconEye,
 } from "@tabler/icons-react";
 import { ethers } from "ethers"; // Import ethers
+import contribute from '@/contracts/contribute'
+
 
 // Function to handle the Food Bank Wallet action
 const handleFoodBankWalletClick = async () => {
@@ -76,18 +78,18 @@ const items = [
     description: "Redistributed all funds to approved public goods on Potlock registry...",
     header: (
       <Skeleton>
-        <img src="/wallpaper.jpg" alt="some random image" />
+        <img src="/FoodBankWallet.svg" alt="some random image" />
       </Skeleton>
     ),
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
     action: handleFoodBankWalletClick, // Attach the function to be called
   },
   {
-    title: "YEAR OF THE CHEF",
-    description: "The Free mint of 2024 hand-drawn dragon chef for public-goods supporters...",
+    title: "Old Folks Home Using Crypto",
+    description: "An old folks home utilizing crypto donations to sustain its residents...",
     header: (
       <Skeleton>
-        <img src="/wallpaper.jpg" alt="some random image" />
+        <img src="/Charity1.svg" alt="some random image" />
       </Skeleton>
     ),
     icon: <IconHandClick className="h-4 w-4 text-neutral-500" />,

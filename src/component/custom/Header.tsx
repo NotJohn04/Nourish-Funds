@@ -12,7 +12,7 @@ const Header = () => (
       <a href="/" className="hover:text-gray-300">Home</a>     
       <Link href="/Funding" className="hover:text-gray-300">Funding</Link>
       <Link href="/Food" className="hover:text-gray-300">Food</Link>
-      <Link href="/Food" className="hover:text-gray-300">Voucher</Link>
+      <Link href="/Voucher" className="hover:text-gray-300">Voucher</Link>
   </div>
   <ConnectWallet></ConnectWallet>
   
