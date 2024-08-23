@@ -3,15 +3,15 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { ThirdwebProvider } from "../component/custom/ThirdwebProvider";
-import Header2 from "../component/custom/Header2";
-import { ScrollSepoliaTestnet } from "@thirdweb-dev/chains"; // Import the correct chain type
+import { ThirdwebProvider } from "@thirdweb-dev/react"; // Ensure this is the correct import
+import { ScrollSepoliaTestnet } from "@thirdweb-dev/chains"; // Correctly imported chain type4\
 
-const activeChain = "binance-testnet";
+
 const inter = Inter({ subsets: ["latin"] });
 
 // Initialize a QueryClient instance
 const queryClient = new QueryClient();
+const clientId = "0fc6b80f44c99ad94e0bc26c3ed52a88";
 
 export default function RootLayout({
   children,
@@ -19,20 +19,25 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <html lang="en">
+      <body className={inter.className}>
+        {/* Ensure Header2 is correctly placed within the layout */}
+        {/* <Header2></Header2> */}
 
-        <html lang="en">
-          <body className={inter.className}>
-            {/* <Header2></Header2> */}
-            <ThirdwebProvider activeChain={ScrollSepoliaTestnet}>
-            <QueryClientProvider 
+
+        <ThirdwebProvider 
+        clientId={clientId}
+        activeChain={ScrollSepoliaTestnet}
+        >
+          <QueryClientProvider 
             client={queryClient}
             contextSharing={true}
-            >
+          >
             {children}
-            </QueryClientProvider>
-            </ThirdwebProvider>
-          </body>
-        </html>      
-
+          </QueryClientProvider>
+        </ThirdwebProvider>
+      </body>
+      
+    </html>      
   );
 }
