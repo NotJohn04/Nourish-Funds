@@ -4,7 +4,7 @@ import Header from "@/component/custom/Header";
 import Header2 from "@/component/custom/Header2";
 import Image from "next/image"
 import { AspectRatio } from "@/component/ui/aspect-ratio"
-import BentoGridDemo from "@/component/custom/BentoGridDemo"
+import FundingCards from "@/component/custom/FundingCards"
 import RootLayout from "@/app/layout";
 
 
@@ -24,12 +24,12 @@ export default function Funding() {
             className="static h-full w-full left-0 right-0 text-transparent"
           />
 
-    <Header2/>
+    {/* <Header2/> */}
       <div className="flex justify-center items-center mx-auto max-w-screen-lg p-4"> 
-        <BentoGridDemo/>
+        <FundingCards/>
       </div>
       <div className="flex justify-center items-center mx-auto max-w-screen-lg p-4"> 
-        <BentoGridDemo/>
+        <FundingCards/>
       </div>
       </RootLayout>
     </>

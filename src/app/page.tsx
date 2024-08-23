@@ -5,7 +5,7 @@ import Header2 from "@/component/custom/Header2";
 import Image from "next/image"
 import { AspectRatio } from "@/component/ui/aspect-ratio"
 import './globals.css';
-import BentoGridDemo from "@/component/custom/BentoGridDemo"
+import BentoGridDemo from "@/component/custom/FundingCards"
 import { Title } from "../component/custom/Title";
 import RootLayout from "@/app/layout";
 
