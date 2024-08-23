@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%; /* Black background */
+    --foreground: 0 0% 98%; /* White foreground */
+    --card: 0 0% 12%; /* Darker gray for cards */
+    --card-foreground: 0 0% 98%; /* White text on cards */
+    --popover: 0 0% 12%; /* Darker gray for popovers */
+    --popover-foreground: 0 0% 98%; /* White text on popovers */
+    --primary: 0 0% 98%; /* White primary elements */
+    --primary-foreground: 0 0% 9%; /* Black text on primary elements */
+    --secondary: 0 0% 20%; /* Slightly lighter gray for secondary elements */
+    --secondary-foreground: 0 0% 98%; /* White text on secondary elements */
+    --muted: 0 0% 14.9%; /* Muted gray */
+    --muted-foreground: 0 0% 63.9%; /* Light gray text on muted elements */
+    --accent: 0 0% 20%; /* Accent color similar to secondary */
+    --accent-foreground: 0 0% 98%; /* White text on accent elements */
+    --destructive: 0 62.8% 30.6%; /* Red destructive color */
+    --destructive-foreground: 0 0% 98%; /* White text on destructive elements */
+    --border: 0 0% 25%; /* Dark border color */
+    --input: 0 0% 20%; /* Dark input field color */
+    --ring: 0 0% 83.1%; /* Light gray ring */
+    --chart-1: 220 70% 50%; /* Blue for chart */
+    --chart-2: 160 60% 45%; /* Green for chart */
+    --chart-3: 30 80% 55%; /* Orange for chart */
+    --chart-4: 280 65% 60%; /* Purple for chart */
+    --chart-5: 340 75% 55%; /* Pink for chart */
+    
+  }
+  body {
+    @apply bg-black text-white;
+  }
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-muted {
+  background-color: #6c757d;
+}
+
+.text-muted-foreground {
+  color: #adb5bd;
+}
