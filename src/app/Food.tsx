@@ -3,7 +3,6 @@
 import Header from "@/component/custom/Header";
 import Header2 from "@/component/custom/Header2";
 import Image from "next/image"
-import { AspectRatio } from "@/component/ui/aspect-ratio"
 import '@styles/globals.css';
 import BentoGridDemo from "@/component/custom/FundingCards"
 

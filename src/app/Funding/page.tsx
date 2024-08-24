@@ -64,10 +64,11 @@
 
 // app/page.tsx
 
+"use client";
+
 import Header from "@/component/custom/Header";
 import Header2 from "@/component/custom/Header2";
 import Image from "next/image";
-import { AspectRatio } from "@/component/ui/aspect-ratio";
 import '../globals.css';
 import FundingCards from "@/component/custom/FundingCards";
 import { useSendTransaction } from "thirdweb/react";
@@ -91,7 +92,7 @@ export default function Page() {
       const contract = await getContract({ 
              client, 
              chain: scrollSepoliaTestnet, 
-             address: "0xa2A90083285204B5643bc2660a8A3bF141F87CC0"
+             address: contractAddress
            });
 
       // Prepare the transaction using the appropriate method and parameters
