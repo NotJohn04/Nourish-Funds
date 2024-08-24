@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "@/component/ui/bento-grid";
 import {
   IconFilter,
   IconHandClick,
@@ -12,7 +12,7 @@ import contribute from '@/contracts/contribute'
 
 
 // Function to handle the Food Bank Wallet action
-const handleFoodBankWalletClick = async () => {
+const contributes = async () => {
   try {
     // Check if MetaMask is installed
     if (typeof window.ethereum !== "undefined") {
@@ -46,6 +46,8 @@ const handleFoodBankWalletClick = async () => {
 
 function FundingCards() {
   return (
+    
+
     <BentoGrid className="max-w-8xl mx-auto h-full w-full">
       {items.map((item, i) => (
         <div
@@ -82,7 +84,7 @@ const items = [
       </Skeleton>
     ),
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
-    action: handleFoodBankWalletClick, // Attach the function to be called
+    action: contributes, // Attach the function to be called
   },
   {
     title: "Old Folks Home Using Crypto",
